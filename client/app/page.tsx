@@ -3,17 +3,15 @@ import FileUpload from "./components/FileUpload";
 
 export default function Home() {
   return (
-    <div>
-      <div className="max-h-screen w-screen flex">
+    <main className="min-h-screen">
+      <div className="flex h-screen">
         {/* Left Section */}
-        <section className="w-[20dvw] min-h-screen">
+        <aside className="w-1/3 p-6 flex items-center justify-center border-r border-white/20">
           <FileUpload />
-        </section>
+        </aside>
         {/* Right Section */}
-        <section className="w-[80dvw] min-h-screen border-white border-l-2">
-          Chat
-        </section>
+        <section className="w-2/3 p-6">Chat</section>
       </div>
-    </div>
+    </main>
   );
 }
